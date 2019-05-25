@@ -4,14 +4,14 @@ public abstract class Vehicle {
 	
 	protected double speed;
 	
-	protected double regulatPrice;
+	protected double regularPrice;
 	
 	protected String colour;
 
 	public Vehicle() {
 		
 		speed = 0;
-		regulatPrice = 0;
+		regularPrice = 0;
 		colour = null;
 	}
 
@@ -23,7 +23,7 @@ public abstract class Vehicle {
 	
 	public double getRegularPrice() {
 		
-		return regulatPrice;
+		return regularPrice;
 	}
 	
 	
