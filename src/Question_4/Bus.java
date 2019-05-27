@@ -14,7 +14,7 @@ public class Bus extends Vehicle {
 	
 	public double getSalesPrice() {
 		
-		return super.getRegularPrice() * manufacturerDiscount;
+		return super.getRegularPrice() * (100 - manufacturerDiscount)/100 ;
 	}
 	
 }
