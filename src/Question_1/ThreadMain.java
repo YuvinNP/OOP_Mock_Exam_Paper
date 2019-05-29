@@ -4,9 +4,11 @@ public class ThreadMain {
 
 	public static void main(String[] args) throws InterruptedException {
 	
-		PrintThread t1 = new PrintThread();
+		ThreadMain threadMain = new ThreadMain();
 		
-		Thread t2 = new Thread(new SLIITThread());
+		PrintThread t1 = new PrintThread(threadMain);
+		
+		Thread t2 = new Thread(new SLIITThread(threadMain));
 		
 		
 		t1.start();

@@ -34,7 +34,8 @@ public class BankDemo {
 				e.printStackTrace();
 
 			} finally {
-
+				
+				scn.nextLine();
 				System.out.println("Do you wish to continue?(yes/no) ");
 				answer = scn.next();
 			}
